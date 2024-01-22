@@ -2,5 +2,55 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 body {
+  width: auto;
   background-color: #02000e;
+}
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  font-size: 10rem;
+  font-weight: 900;
+  margin: 0;
+  background-image: linear-gradient(270deg, #3201b9ee, #b70bc7ee);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.subtitle {
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+.message {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 1rem;
+}
+.Link {
+  display: block;
+  width: auto;
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: linear-gradient(270deg, #3201b9ee, #b70bc7ee);
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: white;
+  margin-top: auto;
+}
+
+.transform {
+  transform: rotate(5deg);
+}
+.decoration {
+  text-decoration: none;
 }

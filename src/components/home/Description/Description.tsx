@@ -8,11 +8,10 @@ export const Description = () => {
   const [hasBorder, setBorder] = useState(false);
 
   const handleClick = () => setBorder(!hasBorder);
-  console.log(hasBorder);
   return (
-    <section className="flex flex-col items-center w-[100vw]">
+    <section className="flex flex-col items-center justify-center">
       <button onClick={handleClick}>
-        <div className="relative rounded-full w-[18rem] h-[18rem] my-2 shadow-[0px_0px_43px_4px_#9f7aea]">
+        <div className="relative rounded-full w-[16rem] h-[16rem] mt-8 shadow-[0px_0px_43px_4px_#9f7aea]">
           <Image
             className="rounded-full"
             src="/images/description/description.jpeg"
@@ -25,15 +24,16 @@ export const Description = () => {
           />
         </div>
       </button>
-
-      <h2 className="text-white font-medium text-lg w-[80vw] mt-8 ">
-        Bring the future today
-      </h2>
-      <p className="text-white font-light text-md w-[80vw] text-justify mt-4">
-        Future World: Your Gateway to Tomorrow&apos;s Tech! Dive into a world of
-        cutting-edge gadgets and gear. Stay ahead of the curve and redefine your
-        digital lifestyle with us.
-      </p>
+      <section className="flex-col">
+        <h2 className="text-white font-medium text-lg px-6 mt-14 ">
+          Bring the future today
+        </h2>
+        <p className="text-white font-light text-md text-justify mt-4 px-6">
+          Future World: Your Gateway to Tomorrow&apos;s Tech! Dive into a world
+          of cutting-edge gadgets and gear. Stay ahead of the curve and redefine
+          your digital lifestyle with us.
+        </p>
+      </section>
     </section>
   );
 };

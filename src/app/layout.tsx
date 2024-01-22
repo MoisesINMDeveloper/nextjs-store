@@ -11,6 +11,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={PoppinsFamily.className}>
         <Header />
+
         {children}
         <Footer />
       </body>
