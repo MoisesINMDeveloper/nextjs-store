@@ -13,7 +13,7 @@ export const ProductCard = ({ product }: ProductCardInterface) => {
       href={`/articulo/${product.handle}?id=${product.id}`}
     >
       <article className="flex flex-col items-center mb-[2rem] ">
-        <div className=" text-left">
+        <div className=" ">
           <Image
             className="rounded-sm"
             src={product.image}
@@ -23,11 +23,15 @@ export const ProductCard = ({ product }: ProductCardInterface) => {
             width={320}
             loading="eager"
           />
-          <h3 className="mt-2 text-[1rem] font-semibold">{product.title}</h3>
+          <h3 className="text-left mt-2 text-[1rem] font-semibold">
+            {product.title}
+          </h3>
         </div>
-        <span className=" inline-block bg-red-800 border-none rounded-sm  p-[0.25rem] absolute mt-[-0.8rem] mr-[-70vw] transform">
-          ${product.price} USD
-        </span>
+        <div className="flex items-end justify-end mt-[1rem] absolute w-[90vw]">
+          <span className=" bg-red-800 border-none rounded-sm items-center p-[0.25rem] absolute mt-[-0.8rem]  transform">
+            ${product.price} USD
+          </span>
+        </div>
       </article>
     </Link>
   );

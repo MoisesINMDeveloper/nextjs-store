@@ -8,9 +8,7 @@ export default function HomeLayout({
 }: {
   children: React.ReactNode;
 }) {
-  useEffect(() => {
-    console.log("envio de metricas");
-  }, []);
+  useEffect(() => {}, []);
   return (
     <div>
       <Hero />

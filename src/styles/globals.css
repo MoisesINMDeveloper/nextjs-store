@@ -54,3 +54,79 @@ body {
 .decoration {
   text-decoration: none;
 }
+
+.classgrid {
+  display: grid;
+  grid-template-columns: 1fr 450px;
+  grid-gap: 5rem;
+  margin-top: 5rem;
+}
+
+.ProductViewItemsOrder {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 1.25rem;
+  margin-top: 0.5rem;
+}
+.ProductViewItemsOrder__itemsCount {
+  display: flex;
+  column-gap: 0.5rem;
+  flex-flow: row nowrap;
+  align-items: center;
+  border-radius: 0.5rem;
+  background: linear-gradient(
+    109.6deg,
+    rgba(50, 1, 185, 0.933) 11.2%,
+    rgba(183, 11, 199, 0.933) 91.1%
+  );
+}
+.ProductViewItemsOrder__itemsCount > button {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  height: 1.5rem;
+  width: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: white;
+  background: transparent;
+  border: none;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+.ProductViewItemsOrder__itemsCount > p {
+  margin: 0px;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.ProductViewItemsOrder__form {
+  width: 100%;
+}
+.ProductViewItemsOrder__submit {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: linear-gradient(
+    109.6deg,
+    rgba(183, 11, 199, 0.933) 11.2%,
+    rgba(50, 1, 185, 0.933) 91.1%
+  );
+  font-weight: 700;
+
+  cursor: pointer;
+  color: white;
+  margin-top: auto;
+}
+.text-Shadow {
+  border-color: rgba(183, 11, 199, 0.933);
+  text-shadow: 1px 1px 25px rgba(183, 11, 199, 0.933);
+}

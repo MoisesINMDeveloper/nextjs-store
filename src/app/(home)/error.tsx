@@ -10,7 +10,7 @@ interface ErrorProps {
 export default function Error({ error, reset }: ErrorProps) {
   useEffect(() => {
     console.log(error);
-  }, []);
+  }, [error]);
   return (
     <div className="flex-col text-center mt-6">
       <p className="text-white font-semibold text-lg ">
