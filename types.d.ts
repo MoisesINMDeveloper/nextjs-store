@@ -43,3 +43,17 @@ type Products = {
   handle: string;
   tags: string | string[];
 };
+type FormDataValues = {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  password: string;
+  password_confirmation?: string;
+};
+type CartItem = {
+  title: string;
+  price: number;
+  quantity: number;
+  id: string;
+};

@@ -1,7 +1,8 @@
+import "../../../styles/globals.css";
 export const Footer = () => {
   return (
-    <footer>
-      <p>Future Shopy</p>
+    <footer className="footer">
+      <p className="text-white">Future World © {new Date().getFullYear()}</p>
     </footer>
   );
 };

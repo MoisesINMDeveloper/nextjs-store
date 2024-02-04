@@ -70,6 +70,7 @@ body {
 }
 .ProductViewItemsOrder__itemsCount {
   display: flex;
+  height: 3rem;
   column-gap: 0.5rem;
   flex-flow: row nowrap;
   align-items: center;
@@ -129,4 +130,106 @@ body {
 .text-Shadow {
   border-color: rgba(183, 11, 199, 0.933);
   text-shadow: 1px 1px 25px rgba(183, 11, 199, 0.933);
+}
+.NewAccountForm {
+  display: block;
+  margin: 3rem auto 0;
+  max-width: 20rem;
+}
+.NewAccountForm > h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(183, 11, 199, 0.933) 11.2%,
+    rgba(50, 1, 185, 0.933) 91.1%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+form {
+  display: grid;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  grid-template-areas: "a a" "b b" "c c" "d d" "e e" "f f" "g g";
+}
+input {
+  color: #b4b3b9;
+  font-weight: 300;
+  padding: 0.5rem 0.5rem;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #302c3f;
+  font-size: 1rem;
+}
+input:focus {
+  outline: none;
+  border-bottom: 1px solid rgba(183, 11, 199, 0.933);
+}
+input:nth-child(1) {
+  grid-area: a;
+}
+input:nth-child(2) {
+  grid-area: b;
+}
+input:nth-child(3) {
+  grid-area: c;
+}
+input:nth-child(4) {
+  grid-area: d;
+}
+input:nth-child(5) {
+  grid-area: e;
+}
+input:nth-child(6) {
+  grid-area: f;
+}
+input:nth-child(7) {
+  grid-area: g;
+}
+input[name="submit"] {
+  grid-area: g;
+  border: 1px solid rgba(183, 11, 199, 0.933);
+  background: transparent;
+  color: #fff;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 1.5rem;
+}
+.footer {
+  text-align: center;
+  padding: 3rem 2rem;
+  border-top: 1px solid rgba(183, 11, 199, 0.933);
+  /* margin-top: 10rem */
+}
+
+.ShoppingCart {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #b4b3b9;
+  position: relative;
+}
+.ShoppingCart > span {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(183, 11, 199, 0.933);
+  color: #fff;
+  padding: 0.2rem;
+  top: -0.5rem;
+  left: -0.25rem;
+  z-index: 1;
+  text-align: center;
+  width: 0.9rem;
+  height: 0.9rem;
+  font-size: 0.4rem;
+}
+.ShoppingCart > svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: #fff;
 }

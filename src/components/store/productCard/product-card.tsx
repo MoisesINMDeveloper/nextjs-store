@@ -10,7 +10,7 @@ export const ProductCard = ({ product }: ProductCardInterface) => {
   return (
     <Link
       className="decoration  text-white cursor-pointer"
-      href={`/articulo/${product.handle}?id=${product.id}`}
+      href={`/product/${product.handle}?id=${product.id}`}
     >
       <article className="flex flex-col items-center mb-[2rem] ">
         <div className=" ">

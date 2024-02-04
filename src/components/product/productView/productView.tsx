@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ProductViewItemsOrder } from "./productViewItemsOrder";
+import { SanitizeHTML } from "app/components/shared/SanitizeHTML";
 import "../../../styles/globals.css";
 interface ProductViewProps {
   product: ProductType;
@@ -26,13 +27,20 @@ export const ProductView = ({ product }: ProductViewProps) => {
         <p className="w-fit text-Shadow font-bold text-xs leading-1 tracking-tighter border-[2px] tags-border border-solid py-[0.5rem] px-[1rem] rounded-md mt-2 text-white">
           {product.tags}
         </p>
-        <p className="text-[0.9rem] leading-2 text-justify my-4 text-white">
+        <SanitizeHTML
+          className="text-[0.9rem] leading-2 text-justify my-4 text-white"
+          tag={"p"}
+        >
           {product.description}
-        </p>
+        </SanitizeHTML>
+
         <span className=" text-[1.5rem] font-bold text-white">
           $ {product.price}
         </span>
-        <ProductViewItemsOrder maxQuantity={product.quantity} />
+        <ProductViewItemsOrder
+          maxQuantity={product.quantity}
+          product={product}
+        />
       </section>
     </main>
   );
